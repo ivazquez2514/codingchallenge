@@ -1,0 +1,40 @@
+.full-screen-menu {
+    position: fixed;
+    width: 100%;
+    background-color: rgba($primary-color, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--closed {
+        height: 0%;
+        
+        a {
+            display: none;
+        }
+    }
+
+    &--opened {
+        height: 100%;
+    }
+
+    a {
+        font-size: 3.5em;
+        text-decoration: none;
+        color: white;
+    }
+
+    &__close_btn {
+        position: absolute;
+        right: 5%;
+        top: 5%;
+    }
+
+    &__menu {
+        &__item {
+            text-align: center;
+        }
+    }
+}
